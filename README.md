@@ -1,25 +1,23 @@
 # 🚴 Capital Bikeshare Demand Analysis
 
-This project analyzes **bike ride demand** in the Washington DC Capital Bikeshare system using spatial and temporal features.  
+This project analyzes **bike ride demand** in the Washington DC Capital Bikeshare system using spatial features.  
 It explores how **station location**, **metro proximity**, and **urban zones (DC vs Maryland)** influence ride volume.
 
 ---
 
 ## 📌 Project Overview
 
-- 📍 **Goal:** Predict ride demand at Capital Bikeshare stations using geospatial and temporal data
-- 📅 **Period:** [Insert date range]
+- 📍 **Goal:** Predict ride demand at Capital Bikeshare stations using geospatial data
 - 🗃️ **Data Sources:**
-  - Capital Bikeshare trip data
-  - Washington DC metro station locations (GeoJSON)
+  - Capital Bikeshare trip data (https://s3.amazonaws.com/capitalbikeshare-data/index.html)
+  - Geographic features Washington DC metro station locations (GeoJSON)
 
 ---
 
 ## 🔍 Key Insights
 
 - Stations closer to metro hubs have consistently higher demand
-- Temporal trends show weekday morning/evening peaks
-- Urban density and neighborhood context impact ridership
+- Urban density impact ridership
 
 ---
 
