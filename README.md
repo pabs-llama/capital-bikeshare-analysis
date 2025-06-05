@@ -28,7 +28,7 @@ https://ggwash.org/view/96982/bikeshare-beat-cabi-breaks-all-time-ridership-reco
 
 
 # Prince George County / Washington DC comparison
-![alt text](image.png)
+![images](image.png)
 
 ---
 
@@ -72,13 +72,13 @@ Deploy machine learning model to:
 
 - Stations closer to each other, metro and other points of interest have consistently higher demand:
 
-![alt text](image-3.png)
+![images](image-3.png)
 
 - If a bikeshare station is full or empty, another needs to be in proximity for bikeshare to be a reliable, go-to option to get around. That’s not the case in much of CaBi’s suburban service area like Prince George County, where officials often opt to sprinkle a few docks here or there without attention to whether station density makes bikeshare competitive with driving or even walking.
 
 In Maryland, CaBi lacks coherence or the density necessary for a high-usage system:
 
-![alt text](image-2.png)
+![images](image-2.png)
 
 Top: Bikeshare in western Prince George’s County
 
@@ -87,6 +87,7 @@ Bottom: Cabi in Washington, D.C
 A lot of dockless bikes, indicated in white, very sparse stations, and a hole with no service at the University of Maryland.
 
 - Machine Learning Predictions: 
+  - Model: Random Forest Regressor (gave the best results )
   - Target : Prediction of bikes demand per station 
   - Features: Proximity to other bike stations, metro and points of interest. 
   - Period of time: weekly, from 2022 to 2024
@@ -121,6 +122,9 @@ Consider relocating low-use stations to denser areas or adjusting marketing stra
 - Data visualization & clustering
 
 ---
+## Notebooks of interest
+- linear_regression_pg: shows the calculations to determine distances between stations and features and the machine learning model to predict the ride demand based on those
+- p3_folium: here I used Geopandas to create layered maps that show the features I
 
 ## 📂 Project Structure
 
@@ -132,3 +136,4 @@ capital-bikeshare-analysis/
 ├── images/                  # Output maps/graphs for README
 ├── requirements.txt
 └── README.md
+
