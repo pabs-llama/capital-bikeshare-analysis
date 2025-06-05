@@ -1,20 +1,19 @@
 # 🚴 Capital Bikeshare Demand Analysis
 
 This project analyzes **bike ride demand** of Capital Bikeshare (CaBi) system in the Washington DC and Metropolitan area using spatial features.  
-It explores how **station location**, **metro proximity**, and **urban zones (DC vs Maryland)** influence ride volume.
+It explores how **bike station location** and it's **proximity** to other bike stations, public transport, commercial corridors, etc. influence ride volume.
 
 # About Cabi
 Capital Bikeshare is a bike-sharing company that operates in the Washington, D.C. metropolitan area, including parts of Virginia and Maryland. It provides a network of docked bicycles that users can rent for short trips. 
 
-CaBi broke the all-time monthly ridership record in August 2024 with 614,639 rides. This is a 31.1% increase in system use from August 2023 and marks the fourth consecutive month where CaBi has shattered its previous milestone for busiest month on record. The regional network has experienced year-over-year monthly ridership increases for 32 consecutive months. Annual ridership continues to thrive as 3,788,634 trips have been taken in 2024—a 31.3% increase from a year prior
+CaBi broke the all-time monthly ridership record in August 2024 with 614,639 rides. This is a 31.1% increase in system use from August 2023 and marks the fourth consecutive month where CaBi has shattered its previous milestone for busiest month on record. The regional network has experienced year-over-year monthly ridership increases for 32 consecutive months. Annual ridership continues to thrive as 3,788,634 trips have been taken in 2024—a 31.3% increase from a year prior.
 
 # Governance Structure
 Publicly funded bike-sharing system owned by local governments in the Washington, D.C. metro area
 Operated by Lyft, a private for-profit company, under a contract with the local jurisdictions
 Funded through a mix of public funds, user fees, and sponsorships 
 
-![alt text](image.png)
-
+![alt text](image-1.png)
 
 # Triggering questions: 
 
@@ -26,6 +25,9 @@ With this questions in mind, after having an overview of the CaBi system in the 
 Online sources:
 https://ggwash.org/view/97701/cabi-is-a-huge-success-will-its-structure-allow-it-to-keep-growing-regionally
 https://ggwash.org/view/96982/bikeshare-beat-cabi-breaks-all-time-ridership-record-for-fourth-consecutive-month-in-august
+
+
+# Prince George County / Washington DC comparison
 
 ---
 
@@ -53,8 +55,17 @@ https://ggwash.org/view/96982/bikeshare-beat-cabi-breaks-all-time-ridership-reco
 ## 🔍 Key Insights
 
 - Stations closer to metro hubs have consistently higher demand
-- Urban density impact ridership
+- If a bikeshare station is full or empty, another needs to be in proximity for bikeshare to be a reliable, go-to option to get around. That’s not the case in much of CaBi’s suburban service area like Prince George County, where officials often opt to sprinkle a few docks here or there without attention to whether station density makes bikeshare competitive with driving or even walking.
+In Maryland, CaBi lacks coherence or the density necessary for a high-usage system:
 
+![alt text](image-2.png)
+
+Top
+Bikeshare in western Prince George’s County
+Bottom
+Cabi in Washington, D.C
+
+A Lot of dockless bikes, indicated in white, very sparse stations, and a hole with no service at the University of Maryland.
 ---
 
 ## 🧪 Techniques Used
