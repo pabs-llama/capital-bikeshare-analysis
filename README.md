@@ -71,13 +71,13 @@ Deploy machine learning model to:
 
 - Stations closer to each other, metro and other points of interest have consistently higher demand:
 
-[images](image-3.png)
+[alt text](images/image-3.png)
 
 - If a bikeshare station is full or empty, another needs to be in proximity for bikeshare to be a reliable, go-to option to get around. That’s not the case in much of CaBi’s suburban service area like Prince George County, where officials often opt to sprinkle a few docks here or there without attention to whether station density makes bikeshare competitive with driving or even walking.
 
 In Maryland, CaBi lacks coherence or the density necessary for a high-usage system:
 
-[images](image-2.png)
+[alt text](images/image-2.png)
 
 Top: Bikeshare in western Prince George’s County
 
