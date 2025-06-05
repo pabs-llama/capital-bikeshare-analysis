@@ -27,7 +27,7 @@ https://ggwash.org/view/97701/cabi-is-a-huge-success-will-its-structure-allow-it
 https://ggwash.org/view/96982/bikeshare-beat-cabi-breaks-all-time-ridership-record-for-fourth-consecutive-month-in-august
 
 
-! [Prince George County / Washington DC comparison](images/(image.png))
+![Prince George County / Washington DC comparison](images/(image.png))
 
 ---
 
