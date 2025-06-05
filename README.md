@@ -104,7 +104,8 @@ A lot of dockless bikes, indicated in white, very sparse stations, and a hole wi
 
 1) Rank stations by predicted ride demand and identify the top 10% busiest stations.
 Ensure high-demand stations have enough bikes/docks to meet peak demand.
-Consider adding more stations nearby if existing ones are frequently at capacity.
+Consider adding more stations nearby if existing ones are frequently at capacity. For example:
+![alt text](images/predicted_demand.png)
 
 2) if near-metro stations consistently show higher demand, prioritize new stations near transit hubs.
 If demand is low near POIs, consider marketing efforts or incentives to boost usage.
