@@ -13,7 +13,7 @@ Publicly funded bike-sharing system owned by local governments in the Washington
 Operated by Lyft, a private for-profit company, under a contract with the local jurisdictions
 Funded through a mix of public funds, user fees, and sponsorships 
 
-![alt text](image-1.png)
+![alt text](images/image-1.png)
 
 # Triggering questions: 
 
@@ -27,7 +27,7 @@ https://ggwash.org/view/97701/cabi-is-a-huge-success-will-its-structure-allow-it
 https://ggwash.org/view/96982/bikeshare-beat-cabi-breaks-all-time-ridership-record-for-fourth-consecutive-month-in-august
 
 
-![Prince George County / Washington DC comparison](images/(image.png))
+![Prince George County / Washington DC comparison](images/image.png)
 
 ---
 
