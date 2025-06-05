@@ -60,6 +60,7 @@ https://ggwash.org/view/96982/bikeshare-beat-cabi-breaks-all-time-ridership-reco
 - Mapped the information in the map to get a visual representation.
 - Calculated distances between the location parameters and the stations.
 - Compared the results with the average number of rides per station.
+![alt text](images/avg_rides_distance_to_features.png)
 ### Testing
 Deploy machine learning model to:
 - Predict the demand 
