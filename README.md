@@ -1,16 +1,52 @@
 # 🚴 Capital Bikeshare Demand Analysis
 
-This project analyzes **bike ride demand** in the Washington DC Capital Bikeshare system using spatial features.  
+This project analyzes **bike ride demand** of Capital Bikeshare (CaBi) system in the Washington DC and Metropolitan area using spatial features.  
 It explores how **station location**, **metro proximity**, and **urban zones (DC vs Maryland)** influence ride volume.
+
+# About Cabi
+Capital Bikeshare is a bike-sharing company that operates in the Washington, D.C. metropolitan area, including parts of Virginia and Maryland. It provides a network of docked bicycles that users can rent for short trips. 
+
+CaBi broke the all-time monthly ridership record in August 2024 with 614,639 rides. This is a 31.1% increase in system use from August 2023 and marks the fourth consecutive month where CaBi has shattered its previous milestone for busiest month on record. The regional network has experienced year-over-year monthly ridership increases for 32 consecutive months. Annual ridership continues to thrive as 3,788,634 trips have been taken in 2024—a 31.3% increase from a year prior
+
+# Governance Structure
+Publicly funded bike-sharing system owned by local governments in the Washington, D.C. metro area
+Operated by Lyft, a private for-profit company, under a contract with the local jurisdictions
+Funded through a mix of public funds, user fees, and sponsorships 
+
+![alt text](image.png)
+
+
+# Triggering questions: 
+
+- What makes some of the bike stations busier than others? -What can we observe in the proximity of the busiest stations? 
+- Why is the performance of Capital Bike share so much better in the DC area, compared to Maryland? 
+
+With this questions in mind, after having an overview of the CaBi system in the whole region and doing some online research, I decided to focus in an area where it seems is not performing that well: Prince George County, Maryland.  
+
+Online sources:
+https://ggwash.org/view/97701/cabi-is-a-huge-success-will-its-structure-allow-it-to-keep-growing-regionally
+https://ggwash.org/view/96982/bikeshare-beat-cabi-breaks-all-time-ridership-record-for-fourth-consecutive-month-in-august
 
 ---
 
 ## 📌 Project Overview
 
-- 📍 **Goal:** Predict ride demand at Capital Bikeshare stations using geospatial data
+- 📍 **Primary Objectives:** 
+  1) Analize the relationship (if any) between geographical location of a given station and ride demand
+  2) Predict ride demand for given stations in a determined period of time
+  3) Guide policy decision in station placement
+
 - 🗃️ **Data Sources:**
-  - Capital Bikeshare trip data (https://s3.amazonaws.com/capitalbikeshare-data/index.html)
-  - Geographic features Washington DC metro station locations (GeoJSON)
+  - Capital Bikeshare trip data for years 2021,2022,2023,2024 (https://s3.amazonaws.com/capitalbikeshare-data/index.html)
+  - Washington and Maryland datasets with polygons and points representing: 
+    - Cities, wards and neighborhoods boundaries
+    - Public transport stations
+    - Bike lanes
+    - City centers
+    - Historic landmark elements (for example: the Capitol, the White House, etc)
+    - Commercial Corridors
+    - Population density
+  Most of them where sourced from https://opendata.dc.gov/datasets as Geojson .
 
 ---
 
