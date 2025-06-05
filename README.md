@@ -28,6 +28,7 @@ https://ggwash.org/view/96982/bikeshare-beat-cabi-breaks-all-time-ridership-reco
 
 
 # Prince George County / Washington DC comparison
+![alt text](image.png)
 
 ---
 
@@ -52,9 +53,28 @@ https://ggwash.org/view/96982/bikeshare-beat-cabi-breaks-all-time-ridership-reco
 
 ---
 
+## Methodoloy
+
+### Data Collection
+- Collected geographical information of Cabi stations,public transport stations, points of interest, distance to city center and population density
+### Analizing
+- Mapped the information in the map to get a visual representation.
+- Calculated distances between the location parameters and the stations.
+- Compared the results with the average number of rides per station.
+### Testing
+Deploy machine learning model to:
+- Predict the demand 
+- Optimize Station Placement
+
+---
+
 ## 🔍 Key Insights
 
-- Stations closer to metro hubs have consistently higher demand
+
+
+- Stations closer to each other, metro and other points of interest have consistently higher demand:
+![alt text](image-3.png)
+
 - If a bikeshare station is full or empty, another needs to be in proximity for bikeshare to be a reliable, go-to option to get around. That’s not the case in much of CaBi’s suburban service area like Prince George County, where officials often opt to sprinkle a few docks here or there without attention to whether station density makes bikeshare competitive with driving or even walking.
 
 In Maryland, CaBi lacks coherence or the density necessary for a high-usage system:
@@ -67,12 +87,37 @@ Bottom: Cabi in Washington, D.C
 
 A lot of dockless bikes, indicated in white, very sparse stations, and a hole with no service at the University of Maryland.
 
+- Machine Learning Predictions: 
+  - Target : Prediction of bikes demand per station 
+  - Features: Proximity to other bike stations, metro and points of interest. 
+  - Period of time: weekly, from 2022 to 2024
+  - Limit: Prince George County
+  - Results: 
+    - Mean Absolute Error: 4.49. Since the Mean Daily Rides is 16, the MAE is  25% off the mean. This mean the model is making pretty accurate predictions.
+    - R² Score: 0.87 of the variance in daily rides is explained by your model
+    - Mean Daily Rides: 16.33
+    - Standard Deviation of Daily Rides: 19.25. The standard deviation of daily rides is 3.12, which is larger than the MAE. This suggests that your model is making much smaller errors than the natural variability in the data, indicating a strong fit.
+
 ---
+
+## Actionable insights:
+
+1) Rank stations by predicted ride demand and identify the top 10% busiest stations.
+Ensure high-demand stations have enough bikes/docks to meet peak demand.
+Consider adding more stations nearby if existing ones are frequently at capacity.
+
+2) if near-metro stations consistently show higher demand, prioritize new stations near transit hubs.
+If demand is low near POIs, consider marketing efforts or incentives to boost usage.
+
+3) Identify the bottom 10% least-used stations.
+Analyze their distance to metro, POIs, and population density to understand why demand is low.
+Consider relocating low-use stations to denser areas or adjusting marketing strategies.
 
 ## 🧪 Techniques Used
 
 - Pandas, GeoPandas, Matplotlib, Folium
 - Distance calculations with geospatial data
+- Machine Learning
 - Time series aggregation
 - Data visualization & clustering
 
