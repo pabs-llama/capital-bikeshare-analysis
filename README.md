@@ -26,8 +26,8 @@ Online sources:
 https://ggwash.org/view/97701/cabi-is-a-huge-success-will-its-structure-allow-it-to-keep-growing-regionally
 https://ggwash.org/view/96982/bikeshare-beat-cabi-breaks-all-time-ridership-record-for-fourth-consecutive-month-in-august
 
-
-![Prince George County / Washington DC comparison](images/image.png)
+Prince George County / Washington DC comparison
+![alt text](images/Prince_George_County_Washington_DC_comparison.png)
 
 ---
 
@@ -72,7 +72,7 @@ Deploy machine learning model to:
 
 - Stations closer to each other, metro and other points of interest have consistently higher demand:
 
-![alt text](images/image-3.png)
+![alt text](images/weekly_rides_distance.png)
 
 - If a bikeshare station is full or empty, another needs to be in proximity for bikeshare to be a reliable, go-to option to get around. That’s not the case in much of CaBi’s suburban service area like Prince George County, where officials often opt to sprinkle a few docks here or there without attention to whether station density makes bikeshare competitive with driving or even walking.
 
@@ -80,9 +80,8 @@ In Maryland, CaBi lacks coherence or the density necessary for a high-usage syst
 
 ![alt text](images/image-2.png)
 
-Top: Bikeshare in western Prince George’s County
-
-Bottom: Cabi in Washington, D.C
+- Top: Bikeshare in western Prince George’s County (Maryland)
+- Bottom: Cabi in Washington, D.C
 
 A lot of dockless bikes, indicated in white, very sparse stations, and a hole with no service at the University of Maryland.
 
@@ -93,10 +92,10 @@ A lot of dockless bikes, indicated in white, very sparse stations, and a hole wi
   - Period of time: weekly, from 2022 to 2024
   - Limit: Prince George County
   - Results: 
-    - Mean Absolute Error: 4.49. Since the Mean Daily Rides is 16, the MAE is  25% off the mean. This mean the model is making pretty accurate predictions.
-    - R² Score: 0.87 of the variance in daily rides is explained by your model
-    - Mean Daily Rides: 16.33
-    - Standard Deviation of Daily Rides: 19.25. The standard deviation of daily rides is 3.12, which is larger than the MAE. This suggests that your model is making much smaller errors than the natural variability in the data, indicating a strong fit.
+    - Mean Absolute Error: 4.49. Since the Mean Weekly Rides is 16, the MAE is  25% off the mean. This mean the model is making pretty accurate predictions.
+    - R² Score: 0.87 of the variance in weekly rides is explained by the model
+    - Mean Weekly Rides: 16.33
+    - Standard Deviation of Weekly Rides: 19.25. The standard deviation of Weekly rides is 3.12, which is larger than the MAE. This suggests that the model is making much smaller errors than the natural variability in the data, indicating a strong fit.
 
 ---
 
