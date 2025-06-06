@@ -1,4 +1,5 @@
 *.csv
 *.html
+!docs/interactive_cabi_map.html
 *.geojson
 *.json
