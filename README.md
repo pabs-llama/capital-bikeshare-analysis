@@ -3,24 +3,22 @@
 This project analyzes **bike ride demand** of Capital Bikeshare (CaBi) system in the Washington DC and Metropolitan area using spatial features.  
 It explores how **bike station location** and it's **proximity** to other bike stations, public transport, commercial corridors, etc. influence ride volume.
 
-# About Cabi
+## About Cabi
 Capital Bikeshare is a bike-sharing company that operates in the Washington, D.C. metropolitan area, including parts of Virginia and Maryland. It provides a network of docked bicycles that users can rent for short trips. 
 
 CaBi broke the all-time monthly ridership record in August 2024 with 614,639 rides. This is a 31.1% increase in system use from August 2023 and marks the fourth consecutive month where CaBi has shattered its previous milestone for busiest month on record. The regional network has experienced year-over-year monthly ridership increases for 32 consecutive months. Annual ridership continues to thrive as 3,788,634 trips have been taken in 2024—a 31.3% increase from a year prior.
 
-# Governance Structure
-Publicly funded bike-sharing system owned by local governments in the Washington, D.C. metro area
-Operated by Lyft, a private for-profit company, under a contract with the local jurisdictions
-Funded through a mix of public funds, user fees, and sponsorships 
+## Share of CaBi rides and Stations per Region
 
 ![alt text](images/image-1.png)
 
-# Triggering questions: 
+## ❓ Triggering Questions
 
-- What makes some of the bike stations busier than others? -What can we observe in the proximity of the busiest stations? 
-- Why is the performance of Capital Bike share so much better in the DC area, compared to Maryland? 
+- What factors make some bike stations busier than others?
+- Are high-demand stations located near specific urban features (e.g., metro stations, commercial corridors)?
+- Why does Capital Bikeshare perform significantly better in Washington, DC compared to Maryland?
 
-With this questions in mind, after having an overview of the CaBi system in the whole region and doing some online research (*), I decided to focus in an area where it seems is not performing that well: Prince George County, Maryland.  
+These questions guided the direction of this project. After an initial exploration of the CaBi system across the entire region, I decided to focus on an area with notably lower ridership: **Prince George’s County, Maryland**. This regional contrast offered a compelling opportunity to explore how geography and infrastructure influence bikeshare demand.
 
 **Prince George County / Washington DC comparison**
 ![alt text](images/Prince_George_County_Washington_DC_comparison.png)
