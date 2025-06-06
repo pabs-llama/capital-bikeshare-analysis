@@ -20,13 +20,9 @@ Funded through a mix of public funds, user fees, and sponsorships
 - What makes some of the bike stations busier than others? -What can we observe in the proximity of the busiest stations? 
 - Why is the performance of Capital Bike share so much better in the DC area, compared to Maryland? 
 
-With this questions in mind, after having an overview of the CaBi system in the whole region and doing some online research, I decided to focus in an area where it seems is not performing that well: Prince George County, Maryland.  
+With this questions in mind, after having an overview of the CaBi system in the whole region and doing some online research (*), I decided to focus in an area where it seems is not performing that well: Prince George County, Maryland.  
 
-Online sources:
-https://ggwash.org/view/97701/cabi-is-a-huge-success-will-its-structure-allow-it-to-keep-growing-regionally
-https://ggwash.org/view/96982/bikeshare-beat-cabi-breaks-all-time-ridership-record-for-fourth-consecutive-month-in-august
-
-Prince George County / Washington DC comparison
+**Prince George County / Washington DC comparison**
 ![alt text](images/Prince_George_County_Washington_DC_comparison.png)
 
 ---
@@ -39,8 +35,8 @@ Prince George County / Washington DC comparison
   3) Guide policy decision in station placement
 
 - 🗃️ **Data Sources:**
-  - Capital Bikeshare trip data for years 2021,2022,2023,2024 (https://s3.amazonaws.com/capitalbikeshare-data/index.html)
-  - Washington and Maryland datasets with polygons and points representing: 
+  - Capital Bikeshare trip data for years 2021,2022,2023,2024 **
+  - Washington and Maryland datasets (***)with polygons and points representing: 
     - Cities, wards and neighborhoods boundaries
     - Public transport stations
     - Bike lanes
@@ -48,7 +44,6 @@ Prince George County / Washington DC comparison
     - Historic landmark elements (for example: the Capitol, the White House, etc)
     - Commercial Corridors
     - Population density
-  Most of them where sourced from https://opendata.dc.gov/datasets as Geojson .
 
 ---
 
@@ -86,8 +81,6 @@ In Maryland, CaBi lacks coherence or the density necessary for a high-usage syst
 
 - Top: Bikeshare in western Prince George’s County (Maryland)
 - Bottom: Cabi in Washington, D.C
-
-
 
 - Machine Learning Predictions: 
   - Model: Random Forest Regressor (gave the best results )
@@ -129,6 +122,12 @@ Consider relocating low-use stations to denser areas or adjusting marketing stra
 ## Notebooks of interest
 - linear_regression_pg: shows the calculations to determine distances between stations and features and the machine learning model to predict the ride demand based on those
 - p3_folium: here I used Geopandas to create layered maps that show the features I
+
+# sources:
+* https://ggwash.org/view/97701/cabi-is-a-huge-success-will-its-structure-allow-it-to-keep-growing-regionally
+https://ggwash.org/view/96982/bikeshare-beat-cabi-breaks-all-time-ridership-record-for-fourth-consecutive-month-in-august
+** https://s3.amazonaws.com/capitalbikeshare-data/index.html
+*** https://opendata.dc.gov/datasets
 
 ## 📂 Project Structure
 
