@@ -1,6 +1,7 @@
 
 import pandas as pd
 import geopandas as gpd
+import numpy as np
 import folium
 import json
 from shapely.geometry import shape
