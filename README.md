@@ -124,10 +124,10 @@ Consider relocating low-use stations to denser areas or adjusting marketing stra
 - p3_folium: here I used Geopandas to create layered maps that show the features I
 
 # sources:
-* https://ggwash.org/view/97701/cabi-is-a-huge-success-will-its-structure-allow-it-to-keep-growing-regionally
-https://ggwash.org/view/96982/bikeshare-beat-cabi-breaks-all-time-ridership-record-for-fourth-consecutive-month-in-august
-** https://s3.amazonaws.com/capitalbikeshare-data/index.html
-*** https://opendata.dc.gov/datasets
+- * https://ggwash.org/view/97701/cabi-is-a-huge-success-will-its-structure-allow-it-to-keep-growing-regionally
+- https://ggwash.org/view/96982/bikeshare-beat-cabi-breaks-all-time-ridership-record-for-fourth-consecutive-month-in-august
+- ** https://s3.amazonaws.com/capitalbikeshare-data/index.html
+- *** https://opendata.dc.gov/datasets
 
 ## 📂 Project Structure
 
