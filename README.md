@@ -35,15 +35,15 @@ With this questions in mind, after having an overview of the CaBi system in the 
   3) Guide policy decision in station placement
 
 - 🗃️ **Data Sources:**
-  - Capital Bikeshare trip data for years 2021,2022,2023,2024 **
-  - Washington and Maryland datasets (***)with polygons and points representing: 
-    - Cities, wards and neighborhoods boundaries
-    - Public transport stations
-    - Bike lanes
-    - City centers
-    - Historic landmark elements (for example: the Capitol, the White House, etc)
-    - Commercial Corridors
-    - Population density
+
+  - [Capital Bikeshare Trip Data (2021–2024)](https://s3.amazonaws.com/capitalbikeshare-data/index.html)  
+  Weekly bike trip logs for all CaBi stations across Washington, DC and surrounding metro areas.
+
+  - [Washington, DC Open Data Portal](https://opendata.dc.gov/datasets)  
+  Geospatial data used for public transport locations, neighborhood boundaries, bike lanes, landmarks, and population metrics.
+
+  - [Greater Greater Washington Analysis](https://ggwash.org/view/97701/cabi-is-a-huge-success-will-its-structure-allow-it-to-keep-growing-regionally)  
+  Background information and urban planning commentary used to contextualize performance gaps in Prince George County.
 
 ---
 
