@@ -75,12 +75,10 @@ Deploy machine learning model to:
 
 - If a bikeshare station is full or empty, another needs to be in proximity for bikeshare to be a reliable, go-to option to get around. That’s not the case in much of CaBi’s suburban service area like Prince George County, where officials often opt to sprinkle a few docks here or there without attention to whether station density makes bikeshare competitive with driving or even walking.
 
-In Maryland, CaBi lacks coherence or the density necessary for a high-usage system. A lot of dockless bikes, indicated in white, very sparse stations, and a hole with no service at the University of Maryland:
+  In Maryland, CaBi lacks coherence or the density necessary for a high-usage system. A lot of dockless    bikes, indicated in white, very sparse stations, and a hole with no service at the University of Maryland:
 
 ![alt text](images/image-2.png)
-
-- Top: Bikeshare in western Prince George’s County (Maryland)
-- Bottom: Cabi in Washington, D.C
+Top: Bikeshare in western Prince George’s County (Maryland) / Bottom: Cabi in Washington, D.C
 
 - Machine Learning Predictions: 
   - Model: Random Forest Regressor (gave the best results )
