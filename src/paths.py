@@ -16,3 +16,4 @@ GEO_DIR = DATA_DIR / "geo"
 # Other folders
 IMAGES_DIR = PROJECT_ROOT / "images"
 NOTEBOOKS_DIR = PROJECT_ROOT / "notebooks"
+DOCS_DIR = PROJECT_ROOT / "docs"
