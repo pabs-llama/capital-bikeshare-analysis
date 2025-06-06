@@ -67,6 +67,10 @@ Deploy machine learning model to:
 - Optimize Station Placement
 
 ---
+## 🗺️ Interactive Map Preview
+![alt text](images/interactive_map_preview.png)
+
+🔗 [Click here to explore the full interactive map](https://pabs-llama.github.io/capital-bikeshare-analysis/interactive_cabi_map.html)
 
 ## 🔍 Key Insights
 
