@@ -119,8 +119,9 @@ Consider relocating low-use stations to denser areas or adjusting marketing stra
 
 - `01_distance_features.ipynb`: Calculates distances between bikeshare stations and nearby features (metro, landmarks, etc.) using GeoPandas and geopy.
 - `02_ml_modeling.ipynb`: Uses the engineered features to train machine learning models that predict weekly ride demand.
+- `folium_mapping.ipynb`: here I used Geopandas to create layered maps that show the features I
+- `EDA.ipynb`: 
 
-- p3_folium: here I used Geopandas to create layered maps that show the features I
 
 ## 📂 Project Structure
 
