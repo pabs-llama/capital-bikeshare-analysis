@@ -127,10 +127,11 @@ Consider relocating low-use stations to denser areas or adjusting marketing stra
 
 ```bash
 capital-bikeshare-analysis/
-├── notebooks/               # Jupyter notebooks for EDA and modeling
-├── src/                     # Utility functions (e.g., geo_distance.py)
-├── data/                    # Cleaned or sample data files
-├── images/                  # Output maps/graphs for README
+├── data/               # Jupyter notebooks for EDA and modeling
+├── docs/                     # Utility functions (e.g., geo_distance.py)
+├── images/   
+├── notebooks/                 # Cleaned or sample data files
+├── src/                  # Output maps/graphs for README
 ├── requirements.txt
 └── README.md
 

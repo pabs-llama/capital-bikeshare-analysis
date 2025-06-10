@@ -3,3 +3,5 @@
 !docs/interactive_cabi_map.html
 *.geojson
 *.json
+* notebooks/maryland_cabi.ipynb
+
