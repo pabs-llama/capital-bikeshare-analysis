@@ -8,15 +8,6 @@ Capital Bikeshare is a bike-sharing company that operates in the Washington, D.C
 
 ## Share of CaBi rides and Stations per Region
 
-## 📊 Prince George's County vs Washington, DC
-
-|                      | **Prince George**       | **Washington, DC**     |
-|----------------------|-------------------------|-------------------------|
-| **Population**       | 946,971                 | 671,803                 |
-| **Density**          | 757.9 / km²             | 4,355.39 / km²          |
-| **CaBi Stations**    | 27                      | 395                     |
-
-
 ![alt text](images/image-1.png)
 
 ## ❓ Triggering Questions
@@ -27,8 +18,13 @@ Capital Bikeshare is a bike-sharing company that operates in the Washington, D.C
 
 After initial exploration, I focused on **Prince George’s County, Maryland**, which has notably lower ridership. This regional contrast offered a compelling lens to explore how geography and infrastructure influence bikeshare demand.
 
-**Prince George County / Washington DC comparison**
-![alt text](images/Prince_George_County_Washington_DC_comparison.png)
+## 📊 Prince George's County vs Washington, DC
+
+|                      | **Prince George**       | **Washington, DC**     |
+|----------------------|-------------------------|-------------------------|
+| **Population**       | 946,971                 | 671,803                 |
+| **Density**          | 757.9 / km²             | 4,355.39 / km²          |
+| **CaBi Stations**    | 27                      | 395                     |
 
 ---
 
@@ -52,24 +48,25 @@ After initial exploration, I focused on **Prince George’s County, Maryland**, 
 
 ---
 
-## Methodoloy
+## 🔍 Methodology
 
-### 📥 Data Collection
-- Collected geographical information of Cabi stations,public transport stations, points of interest, distance to city center and population density
-### 📊 Analizis
-- Mapped the information in the map to get a visual representation.
-- Calculated distances between the location parameters and the stations.
-- Compared the results with the average number of rides per station.
+### Data Collection
+- Compiled geospatial data for bikeshare stations, metro stops, POIs, city center distance, and population density
 
-![alt text](images/avg_rides_distance_to_features.png)
+### Feature Engineering
+- Calculated distances between stations and nearby features
+- Aggregated weekly ride data by station
 
-### Modelling
-Used machine learning model to:
-- Predict the demand 
-- Optimize Station Placement
+### Visualizing
+- Generated a interactive layered map with the features of interest
+
+### Modeling
+- Trained a Random Forest Regressor to predict weekly ride demand
+- Evaluated using MAE and R²
 
 ---
 ## 🗺️ Interactive Map Preview
+
 ![alt text](images/interactive_map_preview.png)
 
 🔗 [Click here to explore the full interactive map](https://pabs-llama.github.io/capital-bikeshare-analysis/interactive_cabi_map.html)
@@ -165,7 +162,6 @@ numpy==2.3.0
 pandas==2.3.0
 
 Shapely==2.1.1
-
 
 
 ## 📂 Project Structure
