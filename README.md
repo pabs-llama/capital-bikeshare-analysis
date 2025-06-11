@@ -6,8 +6,6 @@ It explores how **bike station location** and it's **proximity** to other bike s
 ## About Cabi
 Capital Bikeshare is a bike-sharing company that operates in the Washington, D.C. metropolitan area, including parts of Virginia and Maryland. It provides a network of docked bicycles that users can rent for short trips. 
 
-CaBi broke the all-time monthly ridership record in August 2024 with 614,639 rides. This is a 31.1% increase in system use from August 2023 and marks the fourth consecutive month where CaBi has shattered its previous milestone for busiest month on record. The regional network has experienced year-over-year monthly ridership increases for 32 consecutive months. Annual ridership continues to thrive as 3,788,634 trips have been taken in 2024—a 31.3% increase from a year prior.
-
 ## Share of CaBi rides and Stations per Region
 
 ![alt text](images/image-1.png)
@@ -18,7 +16,7 @@ CaBi broke the all-time monthly ridership record in August 2024 with 614,639 rid
 - Are high-demand stations located near specific urban features (e.g., metro stations, commercial corridors)?
 - Why does Capital Bikeshare perform significantly better in Washington, DC compared to Maryland?
 
-These questions guided the direction of this project. After an initial exploration of the CaBi system across the entire region, I decided to focus on an area with notably lower ridership: **Prince George’s County, Maryland**. This regional contrast offered a compelling opportunity to explore how geography and infrastructure influence bikeshare demand.
+After initial exploration, I focused on **Prince George’s County, Maryland**, which has notably lower ridership. This regional contrast offered a compelling lens to explore how geography and infrastructure influence bikeshare demand.
 
 **Prince George County / Washington DC comparison**
 ![alt text](images/Prince_George_County_Washington_DC_comparison.png)
@@ -47,15 +45,17 @@ These questions guided the direction of this project. After an initial explorati
 
 ## Methodoloy
 
-### Data Collection
+### 📥 Data Collection
 - Collected geographical information of Cabi stations,public transport stations, points of interest, distance to city center and population density
-### Analizing
+### 📊 Analizis
 - Mapped the information in the map to get a visual representation.
 - Calculated distances between the location parameters and the stations.
 - Compared the results with the average number of rides per station.
+
 ![alt text](images/avg_rides_distance_to_features.png)
-### Testing
-Deploy machine learning model to:
+
+### Modelling
+Used machine learning model to:
 - Predict the demand 
 - Optimize Station Placement
 
@@ -67,54 +67,52 @@ Deploy machine learning model to:
 
 ## 🔍 Key Insights
 
-- Stations closer to each other, metro and other points of interest have consistently higher demand:
+- CaBi Stations closer to each other, to metro and other POIs consistently show higher demand:
 
 ![alt text](images/weekly_rides_distance.png)
 
-- If a bikeshare station is full or empty, another needs to be in proximity for bikeshare to be a reliable, go-to option to get around. That’s not the case in much of CaBi’s suburban service area like Prince George County, where officials often opt to sprinkle a few docks here or there without attention to whether station density makes bikeshare competitive with driving or even walking.
-
-  In Maryland, CaBi lacks coherence or the density necessary for a high-usage system. A lot of dockless    bikes, indicated in white, very sparse stations, and a hole with no service at the University of Maryland:
+- In Prince George’s County, station density is low and lacks the coherence necessary for high usage. Many docks are isolated, making bikeshare less viable than driving or walking.
 
 ![alt text](images/image-2.png)
 Top: Bikeshare in western Prince George’s County (Maryland) / Bottom: Cabi in Washington, D.C
 
-- Machine Learning Predictions: 
-  - Model: Random Forest Regressor (gave the best results )
-  - Target : Prediction of bikes demand per station 
-  - Features: Proximity to other bike stations, metro and points of interest. 
-  - Period of time: weekly, from 2022 to 2024
-  - Limit: Prince George County
-  - Results: 
-    - Mean Absolute Error: 4.49. Since the Mean Weekly Rides is 16, the MAE is  25% off the mean. This mean the model is making pretty accurate predictions.
-    - R² Score: 0.87 of the variance in weekly rides is explained by the model
-    - Mean Weekly Rides: 16.33
-    - Standard Deviation of Weekly Rides: 19.25. The standard deviation of Weekly rides is 3.12, which is larger than the MAE. This suggests that the model is making much smaller errors than the natural variability in the data, indicating a strong fit.
+### 🔍 Model Results
+- **Model**: Random Forest Regressor  
+- **Target**: Weekly ride demand per station (2022–2024)  
+- **Region**: Prince George’s County  
+- **Features**: Distance to other stations, metro, POIs
+
+**Performance:**
+
+- 🧮 Mean Absolute Error (MAE): 4.49  
+- 📈 Mean Weekly Rides: 16.33  
+- 📊 Standard Deviation of Weekly Rides: 19.25  
+- 🔍 R² Score: 0.87 — the model explains 87% of the variance
+
+The model performs well: MAE is much smaller than the data’s natural variability.
 
 ---
 
 ## Actionable insights:
 
-1) Rank stations by predicted ride demand and identify the top 10% busiest stations.
-Ensure high-demand stations have enough bikes/docks to meet peak demand.
-Consider adding more stations nearby if existing ones are frequently at capacity. For example:
+1. **Top 10% Stations**  
+   Ensure high-demand stations have enough bikes/docks. Add nearby stations if existing ones are often full.
+
 ![alt text](images/predicted_demand.png)
 
-2) if near-metro stations consistently show higher demand, prioritize new stations near transit hubs.
-If demand is low near POIs, consider marketing efforts or incentives to boost usage.
+2. **Metro-Adjacent Expansion**  
+   Prioritize station placement near metro or major public transport hubs.
 
-3) Identify the bottom 10% least-used stations.
-Analyze their distance to metro, POIs, and population density to understand why demand is low.
-Consider relocating low-use stations to denser areas or adjusting marketing strategies.
+3. **Underperforming Stations**  
+   Analyze low-use stations based on location. Consider relocation or marketing incentives to improve usage.
 
-## 🧪 Techniques Used
+## 🧪 Tools & Techniques
 
-- Pandas, GeoPandas, Matplotlib, Folium
-- Distance calculations with geospatial data
-- Machine Learning
-- Time series aggregation
-- Data visualization & clustering
+- **Libraries**: pandas, geopandas, folium, matplotlib, scikit-learn, geopy  
+- **Techniques**: distance calculations, time series aggregation, geospatial analysis, machine learning, clustering
 
 ---
+
 ## 🔍 Notebooks of Interest
 
 - `01_distance_features.ipynb`: Calculates distances between bikeshare stations and nearby features (metro, landmarks, etc.) using GeoPandas and geopy.
@@ -127,22 +125,25 @@ Consider relocating low-use stations to denser areas or adjusting marketing stra
 Follow these steps to set up your development environment:
 
 1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/capital-bikeshare-analysis.git
-   cd capital-bikeshare-analysis
-
+```bash
+  git clone https://github.com/yourusername/capital-bikeshare-analysis.git
+  cd capital-bikeshare-analysis 
+```  
 2. **Create the Conda environment:**
+
 Make sure you have Conda installed, then run:
-  ```bash
+```bash
 conda env create -f environment.yml
-
+```
 3. ** Activate Environment**
-```conda activate capital-bikeshare-env```
-
+```bash
+conda activate capital-bikeshare-env
+```
 4. Launch JupyterLab:
-```jupyter lab```
-
-Note: This project uses the following key packages:
+```bash
+jupyter lab
+```
+**Note:** This project uses the following key packages:
 
 folium==0.19.7
 
@@ -169,4 +170,4 @@ capital-bikeshare-analysis/
 ├── src/                  # Output maps/graphs for README
 ├── requirements.txt
 └── README.md
-
+```
