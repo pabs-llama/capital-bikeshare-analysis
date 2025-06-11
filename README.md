@@ -21,6 +21,17 @@ It explores how **bike station location** and it's **proximity** to other bike s
   - [Greater Greater Washington Analysis](https://ggwash.org/view/97701/cabi-is-a-huge-success-will-its-structure-allow-it-to-keep-growing-regionally)  
   Background information and urban planning commentary used to contextualize performance gaps in Prince George County.
 
+## 📥 Dataset Access
+
+The full dataset used in this project (~2 GB CSV) is available here:
+
+- 2021-2023 🔗 [Download from Google Drive](https://drive.google.com/file/d/1JTO4Mu5q9UZhrPGEk9BUzcgcsIVPBfew/view?usp=drive_link)  
+- 2024 ((https://drive.google.com/file/d/1JTO4Mu5q9UZhrPGEk9BUzcgcsIVPBfew/view?usp=drive_link)  )
+
+> Note: Due to GitHub file size limits, the dataset is not stored in the repo itself.
+
+The full dataset  
+
 ## About Cabi
 Capital Bikeshare is a bike-sharing company that operates in the Washington, D.C. metropolitan area, including parts of Virginia and Maryland. It provides a network of docked bicycles that users can rent for short trips. 
 
@@ -116,10 +127,11 @@ The model performs well: MAE is much smaller than the data’s natural variabili
 
 ## 🔍 Notebooks of Interest
 
-- `01_distance_features.ipynb`: Calculates distances between bikeshare stations and nearby features (metro, landmarks, etc.) using GeoPandas and geopy.
-- `02_ml_modeling.ipynb`: Uses the engineered features to train machine learning models that predict weekly ride demand.
-- `folium_mapping.ipynb`: here I used Geopandas to create layered maps that show the features I
-- `EDA.ipynb`: 
+- `01_EDA.ipynb`: Performs exploratory data analysis on bikeshare usage trends, station activity, and spatial distributions.
+- `02_CaBi_2024`: Downloads, cleans, and preprocesses Capital Bikeshare trip data for the year 2024.
+- `03_folium_mapping.ipynb`: Creates interactive layered maps using GeoPandas and Folium to visualize stations, metro stops, and points of interest.
+- `04_distance_features.ipynb`: Calculates distances between bikeshare stations and nearby features (metro, landmarks, etc.) using GeoPandas and geopy.
+- `05_ml_modeling.ipynb`: Uses the engineered features to train machine learning models that predict weekly ride demand.
 
 ## 🛠 Environment Setup
 
