@@ -8,6 +8,15 @@ Capital Bikeshare is a bike-sharing company that operates in the Washington, D.C
 
 ## Share of CaBi rides and Stations per Region
 
+## 📊 Prince George's County vs Washington, DC
+
+|                      | **Prince George**       | **Washington, DC**     |
+|----------------------|-------------------------|-------------------------|
+| **Population**       | 946,971                 | 671,803                 |
+| **Density**          | 757.9 / km²             | 4,355.39 / km²          |
+| **CaBi Stations**    | 27                      | 395                     |
+
+
 ![alt text](images/image-1.png)
 
 ## ❓ Triggering Questions
@@ -71,7 +80,7 @@ Used machine learning model to:
 
 ![alt text](images/weekly_rides_distance.png)
 
-- In Prince George’s County, station density is low and lacks the coherence necessary for high usage. Many docks are isolated, making bikeshare less viable than driving or walking.
+- In Prince George’s County, station density is low and lacks the coherence necessary for high usage. Many dockless bikes (in white) and isolated docks (red), making bikeshare less viable than driving or walking. 
 
 ![alt text](images/image-2.png)
 Top: Bikeshare in western Prince George’s County (Maryland) / Bottom: Cabi in Washington, D.C
@@ -163,11 +172,11 @@ Shapely==2.1.1
 
 ```bash
 capital-bikeshare-analysis/
-├── data/               # Jupyter notebooks for EDA and modeling
-├── docs/                     # Utility functions (e.g., geo_distance.py)
-├── images/   
-├── notebooks/                 # Cleaned or sample data files
-├── src/                  # Output maps/graphs for README
-├── requirements.txt
+├── data/                 # Raw and processed data files
+├── docs/                 # Project documentation
+├── images/               # Maps and figures used in README
+├── notebooks/            # Jupyter notebooks (EDA, modeling, mapping)
+├── src/                  # Helper functions and scripts
+├── environment.yml       # Conda environment definition
 └── README.md
 ```
