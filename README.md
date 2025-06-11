@@ -3,6 +3,24 @@
 This project analyzes **bike ride demand** of Capital Bikeshare (CaBi) system in the Washington DC and Metropolitan area using spatial features.  
 It explores how **bike station location** and it's **proximity** to other bike stations, public transport, commercial corridors, etc. influence ride volume.
 
+## 📌 Project Overview
+
+- 📍 **Primary Objectives:** 
+  1) Analize the relationship (if any) between geographical location of a given station and ride demand
+  2) Predict ride demand for given stations in a determined period of time
+  3) Guide policy decision in station placement
+
+- 🗃️ **Data Sources:**
+
+  - [Capital Bikeshare Trip Data (2021–2024)](https://s3.amazonaws.com/capitalbikeshare-data/index.html)  
+  Weekly bike trip logs for all CaBi stations across Washington, DC and surrounding metro areas.
+
+  - [Washington, DC Open Data Portal](https://opendata.dc.gov/datasets)  
+  Geospatial data used for public transport locations, neighborhood boundaries, bike lanes, landmarks, and population metrics.
+
+  - [Greater Greater Washington Analysis](https://ggwash.org/view/97701/cabi-is-a-huge-success-will-its-structure-allow-it-to-keep-growing-regionally)  
+  Background information and urban planning commentary used to contextualize performance gaps in Prince George County.
+
 ## About Cabi
 Capital Bikeshare is a bike-sharing company that operates in the Washington, D.C. metropolitan area, including parts of Virginia and Maryland. It provides a network of docked bicycles that users can rent for short trips. 
 
@@ -28,38 +46,15 @@ After initial exploration, I focused on **Prince George’s County, Maryland**, 
 
 ---
 
-## 📌 Project Overview
-
-- 📍 **Primary Objectives:** 
-  1) Analize the relationship (if any) between geographical location of a given station and ride demand
-  2) Predict ride demand for given stations in a determined period of time
-  3) Guide policy decision in station placement
-
-- 🗃️ **Data Sources:**
-
-  - [Capital Bikeshare Trip Data (2021–2024)](https://s3.amazonaws.com/capitalbikeshare-data/index.html)  
-  Weekly bike trip logs for all CaBi stations across Washington, DC and surrounding metro areas.
-
-  - [Washington, DC Open Data Portal](https://opendata.dc.gov/datasets)  
-  Geospatial data used for public transport locations, neighborhood boundaries, bike lanes, landmarks, and population metrics.
-
-  - [Greater Greater Washington Analysis](https://ggwash.org/view/97701/cabi-is-a-huge-success-will-its-structure-allow-it-to-keep-growing-regionally)  
-  Background information and urban planning commentary used to contextualize performance gaps in Prince George County.
-
----
-
 ## 🔍 Methodology
 
 ### Data Collection
 - Compiled geospatial data for bikeshare stations, metro stops, POIs, city center distance, and population density
-
 ### Feature Engineering
 - Calculated distances between stations and nearby features
 - Aggregated weekly ride data by station
-
 ### Visualizing
-- Generated a interactive layered map with the features of interest
-
+- Generated an interactive layered map with the features of interest
 ### Modeling
 - Trained a Random Forest Regressor to predict weekly ride demand
 - Evaluated using MAE and R²
