@@ -32,9 +32,7 @@ Due to GitHub file size limitations, the full cleaned datasets used in this proj
   🔗 [Download CSV (Google Drive)](https://drive.google.com/file/d/1JTO4Mu5q9UZhrPGEk9BUzcgcsIVPBfew/view?usp=drive_link)
 
 - 📅 **2024 Data**  
-  🔗 [Download CSV (Google Drive)](https://drive.google.com/file/d/1JTO4Mu5q9UZhrPGEk9BUzcgcsIVPBfew/view?usp=drive_link)
-
-> If you prefer, you can also download the raw trip data directly from [Capital Bikeshare’s official data portal](https://s3.amazonaws.com/capitalbikeshare-data/index.html) and run the preprocessing steps from the included notebooks.
+  🔗 [Download CSV (Google Drive)](https://drive.google.com/file/d/1p3sf3d4vhVSOWYT662PvhSqOwhTQmz3I/view?usp=drive_link)
 
 ## About Cabi
 Capital Bikeshare is a bike-sharing company that operates in the Washington, D.C. metropolitan area, including parts of Virginia and Maryland. It provides a network of docked bicycles that users can rent for short trips. 
