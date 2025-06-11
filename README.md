@@ -10,27 +10,31 @@ It explores how **bike station location** and it's **proximity** to other bike s
   2) Predict ride demand for given stations in a determined period of time
   3) Guide policy decision in station placement
 
-- 🗃️ **Data Sources:**
+## 🗃️ Data Sources
 
-  - [Capital Bikeshare Trip Data (2021–2024)](https://s3.amazonaws.com/capitalbikeshare-data/index.html)  
-  Weekly bike trip logs for all CaBi stations across Washington, DC and surrounding metro areas.
+- **[Capital Bikeshare Trip Data (2021–2024)](https://s3.amazonaws.com/capitalbikeshare-data/index.html)**  
+  Official trip logs for all Capital Bikeshare stations across Washington, DC and surrounding metro areas.  
+  > Data is freely available and can be downloaded directly from the CaBi website.
 
-  - [Washington, DC Open Data Portal](https://opendata.dc.gov/datasets)  
-  Geospatial data used for public transport locations, neighborhood boundaries, bike lanes, landmarks, and population metrics.
+- **[Washington, DC Open Data Portal](https://opendata.dc.gov/datasets)**  
+  Geospatial datasets including public transport locations, neighborhood boundaries, bike lanes, landmarks, and population metrics.
 
-  - [Greater Greater Washington Analysis](https://ggwash.org/view/97701/cabi-is-a-huge-success-will-its-structure-allow-it-to-keep-growing-regionally)  
-  Background information and urban planning commentary used to contextualize performance gaps in Prince George County.
+- **[Greater Greater Washington Article](https://ggwash.org/view/97701/cabi-is-a-huge-success-will-its-structure-allow-it-to-keep-growing-regionally)**  
+  Commentary and urban analysis that helped frame regional disparities, especially in Prince George’s County.
+
+---
 
 ## 📥 Dataset Access
 
-The full dataset used in this project (~2 GB CSV) is available here:
+Due to GitHub file size limitations, the full cleaned datasets used in this project (~2 GB total) are hosted externally:
 
-- 2021-2023 🔗 [Download from Google Drive](https://drive.google.com/file/d/1JTO4Mu5q9UZhrPGEk9BUzcgcsIVPBfew/view?usp=drive_link)  
-- 2024 ((https://drive.google.com/file/d/1JTO4Mu5q9UZhrPGEk9BUzcgcsIVPBfew/view?usp=drive_link)  )
+- 📅 **2021–2023 Data**  
+  🔗 [Download CSV (Google Drive)](https://drive.google.com/file/d/1JTO4Mu5q9UZhrPGEk9BUzcgcsIVPBfew/view?usp=drive_link)
 
-> Note: Due to GitHub file size limits, the dataset is not stored in the repo itself.
+- 📅 **2024 Data**  
+  🔗 [Download CSV (Google Drive)](https://drive.google.com/file/d/1JTO4Mu5q9UZhrPGEk9BUzcgcsIVPBfew/view?usp=drive_link)
 
-The full dataset  
+> If you prefer, you can also download the raw trip data directly from [Capital Bikeshare’s official data portal](https://s3.amazonaws.com/capitalbikeshare-data/index.html) and run the preprocessing steps from the included notebooks.
 
 ## About Cabi
 Capital Bikeshare is a bike-sharing company that operates in the Washington, D.C. metropolitan area, including parts of Virginia and Maryland. It provides a network of docked bicycles that users can rent for short trips. 
