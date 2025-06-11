@@ -122,6 +122,41 @@ Consider relocating low-use stations to denser areas or adjusting marketing stra
 - `folium_mapping.ipynb`: here I used Geopandas to create layered maps that show the features I
 - `EDA.ipynb`: 
 
+## 🛠 Environment Setup
+
+Follow these steps to set up your development environment:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/capital-bikeshare-analysis.git
+   cd capital-bikeshare-analysis
+
+2. **Create the Conda environment:**
+Make sure you have Conda installed, then run:
+  ```bash
+conda env create -f environment.yml
+
+3. ** Activate Environment**
+```conda activate capital-bikeshare-env```
+
+4. Launch JupyterLab:
+```jupyter lab```
+
+Note: This project uses the following key packages:
+
+folium==0.19.7
+
+geopandas==1.1.0
+
+geopy==2.4.1
+
+numpy==2.3.0
+
+pandas==2.3.0
+
+Shapely==2.1.1
+
+
 
 ## 📂 Project Structure
 
