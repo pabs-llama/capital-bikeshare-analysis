@@ -83,11 +83,12 @@ After initial exploration, I focused on **Prince George’s County, Maryland**, 
 
 - CaBi Stations closer to each other, to metro and other POIs consistently show higher demand:
 
-![alt text](images/weekly_rides_distance.png)
+![alt text](images/station_location_influence.png)
 
 - In Prince George’s County, station density is low and lacks the coherence necessary for high usage. Many dockless bikes (in white) and isolated docks (red), making bikeshare less viable than driving or walking. 
 
 ![alt text](images/image-2.png)
+
 Top: Bikeshare in western Prince George’s County (Maryland) / Bottom: Cabi in Washington, D.C
 
 ### 🔍 Model Results
@@ -111,7 +112,7 @@ The model performs well: MAE is much smaller than the data’s natural variabili
 
 1. **Top 10% Stations**  
    Ensure high-demand stations have enough bikes/docks. Add nearby stations if existing ones are often full.
-   
+
 ![alt text](images/predicted_weekly_rides.png)
 
 2. **Metro-Adjacent Expansion**  
