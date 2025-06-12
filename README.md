@@ -111,6 +111,7 @@ The model performs well: MAE is much smaller than the data’s natural variabili
 
 1. **Top 10% Stations**  
    Ensure high-demand stations have enough bikes/docks. Add nearby stations if existing ones are often full.
+   
 ![alt text](images/predicted_weekly_rides.png)
 
 2. **Metro-Adjacent Expansion**  
