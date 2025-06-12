@@ -4,4 +4,6 @@
 *.geojson
 *.json
 * notebooks/maryland_cabi.ipynb
+*.zip
 
+notebook_to_slides_app.py
