@@ -7,3 +7,4 @@
 *.zip
 
 notebook_to_slides_app.py
+data/interim/cabi_2024.csv.zip
